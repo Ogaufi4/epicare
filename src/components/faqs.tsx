@@ -5,27 +5,27 @@ export default () => {
         {
             q: "What is epilepsy?",
             a: "Epilepsy is a group of non-communicable neurological disorders characterized by recurrent epileptic seizures. An epileptic seizure is the clinical manifestation of an abnormal, excessive, and synchronized electrical discharge in the neurons. The occurrence of two or more unprovoked seizures defines epilepsy.",
-            href: "#",
+            href: "https://www.epilepsy.com/what-is-epilepsy",
         },
         {
             q: "What are focal seizures?",
             a: "Focal seizures are divided into two categories: <br/><b>Focal seizures without loss of consciousness:</b> These seizures don't cause a loss of awareness and may alter emotions or cause involuntary jerking of a body part. <br/><b>Focal seizures with impaired awareness:</b> These involve a change or loss of consciousness and may include repetitive movements like hand rubbing or chewing.",
-            href: "#",
+            href: "https://my.clevelandclinic.org/health/diseases/22893-focal-seizure",
         },
         {
             q: "What are generalized seizures?",
             a: "Generalized seizures involve all areas of the brain and include: <br/><b>Absence seizures:</b> Brief loss of awareness, often with subtle movements. <br/><b>Tonic seizures:</b> Stiff muscles, often causing falls. <br/><b>Atonic seizures:</b> Sudden loss of muscle control. <br/><b>Clonic seizures:</b> Rhythmic jerking movements. <br/><b>Myoclonic seizures:</b> Sudden brief jerks or twitches. <br/><b>Tonic-clonic seizures:</b> Sudden loss of consciousness with body stiffening and shaking.",
-            href: "#",
+            href: "https://www.hopkinsmedicine.org/health/conditions-and-diseases/epilepsy/generalized-seizures",
         },
         {
             q: "Why is medication adherence important for epilepsy?",
             a: "Adhering to epilepsy medication regimens is crucial for effective seizure control, reducing the risk of seizures and their associated risks, and improving overall quality of life. It helps prevent complications like SUDEP, reduces healthcare costs, and ensures better seizure management.",
-            href: "#",
+            href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6507244/",
         },
         {
             q: "How can medication adherence be improved?",
             a: "Strategies include setting reminders, using pill organizers, and maintaining open communication with healthcare providers. Education about epilepsy and the importance of adherence is also key to successful treatment.",
-            href: "#",
+            href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6507244/",
         }
     ];
 
