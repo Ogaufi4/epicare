@@ -1,5 +1,33 @@
 'use client';
-export default () => {
+import React, { useEffect, useRef, useState } from 'react';
+
+export default function Faqs() {
+    const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+    const headerRef = useRef<HTMLDivElement>(null);
+    const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsHeaderVisible(entry.isIntersecting);
+            },
+            { threshold: 0.5 }
+        );
+
+        if (headerRef.current) {
+            observer.observe(headerRef.current);
+        }
+
+        return () => {
+            if (headerRef.current) {
+                observer.unobserve(headerRef.current);
+            }
+        };
+    }, []);
+
+    const toggleFaq = (index: number) => {
+        setExpandedIndex(expandedIndex === index ? null : index);
+    };
 
     const faqsList = [
         {
@@ -30,9 +58,14 @@ export default () => {
     ];
 
     return (
-        <section className='py-14'>
+        <section className='py-14 animate-fade-in-up'>
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="space-y-5 sm:text-center sm:max-w-md sm:mx-auto">
+                <div
+                    ref={headerRef}
+                    className={`space-y-5 sm:text-center sm:max-w-md sm:mx-auto transition-opacity duration-1000 ${
+                        isHeaderVisible ? 'opacity-100' : 'opacity-0'
+                    }`}
+                >
                     <h3 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
                         How can we help?
                     </h3>
@@ -60,19 +93,26 @@ export default () => {
                 <div className='mt-12'>
                     <ul className='space-y-8 gap-12 grid-cols-2 sm:grid sm:space-y-0 lg:grid-cols-3'>
                         {faqsList.map((item, idx) => (
-                            <li
-                                key={idx}
-                                className="space-y-3"
-                            >
+                            <li key={idx} className="space-y-3">
                                 <summary
-                                    className="flex items-center justify-between font-semibold text-gray-700">
+                                    onClick={() => toggleFaq(idx)}
+                                    className="flex items-center justify-between font-semibold text-gray-700 cursor-pointer hover:text-indigo-600 transition-colors"
+                                >
                                     {item.q}
+                                    <span className="ml-2 text-indigo-600">
+                                        {expandedIndex === idx ? '-' : '+'}
+                                    </span>
                                 </summary>
-                                <p
-                                    dangerouslySetInnerHTML={{ __html: item.a }}
-                                    className='text-gray-600 leading-relaxed'>
-                                </p>
-                                <a href={item.href} className="flex items-center gap-x-1 text-sm text-indigo-600 hover:text-indigo-400 duration-150 font-medium">
+                                {expandedIndex === idx && (
+                                    <p
+                                        dangerouslySetInnerHTML={{ __html: item.a }}
+                                        className='text-gray-600 leading-relaxed mt-2'
+                                    ></p>
+                                )}
+                                <a
+                                    href={item.href}
+                                    className="flex items-center gap-x-1 text-sm text-indigo-600 hover:text-indigo-400 duration-150 font-medium"
+                                >
                                     Read more
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                         <path fillRule="evenodd" d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z" clipRule="evenodd" />
