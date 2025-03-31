@@ -92,7 +92,7 @@ export default function Medical() {
                     isHeaderVisible ? 'opacity-100' : 'opacity-0'
                 }`}
             >
-                <h1 className="text-4xl xl:text-5xl font-bold text-center">
+                <h1 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
                     First Aid For Seizures
                 </h1>
             </div>

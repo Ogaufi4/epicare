@@ -115,7 +115,7 @@ export default function Learn() {
                     }`}
                 >
                     <div className="relative z-10">
-                        <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                        <h3 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
                             Learn more about Epilepsy
                         </h3>
                         <p className="mt-3">
