@@ -5,7 +5,7 @@ import { Menu, X } from 'lucide-react';
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const titleRef = useRef<HTMLHeadingElement>(null);
+    const headerRef = useRef<HTMLDivElement>(null);
     const navigation = [
         { title: "Home", path: "#home" },
         { title: "Medication Guide", path: "#learn" },
@@ -17,14 +17,8 @@ export default function Navigation() {
         const handleScroll = () => {
             if (window.scrollY > 0) {
                 setIsScrolled(true);
-                if (titleRef.current) {
-                    titleRef.current.classList.add('fade-in');
-                }
             } else {
                 setIsScrolled(false);
-                if (titleRef.current) {
-                    titleRef.current.classList.remove('fade-in');
-                }
             }
         };
 
@@ -37,14 +31,19 @@ export default function Navigation() {
         const element = document.getElementById(sectionId);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-            setIsMenuOpen(false); // Close menu after clicking a link
+            setIsMenuOpen(false);
         }
     };
 
     return (
-        <header className={`sticky top-0 z-50 bg-indigo-200/80 backdrop-blur-md transition-all duration-300 ${
-            isScrolled ? 'shadow-lg' : ''
-        }`}>
+        <header 
+            ref={headerRef}
+            className={`sticky top-0 z-50 transition-all duration-300 ${
+                isScrolled 
+                    ? 'bg-indigo-200/80 backdrop-blur-md shadow-lg' 
+                    : 'bg-indigo-200'
+            }`}
+        >
             <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
                 <div className="flex items-center justify-between">
                     <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="flex items-center">
@@ -87,11 +86,6 @@ export default function Navigation() {
                     </ul>
                 </div>
             </nav>
-            <style jsx>{`
-                .fade-in {
-                    opacity: 1 !important;
-                }
-            `}</style>
         </header>
     );
 } 
