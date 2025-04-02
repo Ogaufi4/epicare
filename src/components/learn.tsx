@@ -142,13 +142,15 @@ export default function Learn() {
                                             animationDelay: `${idx * 0.2}s`,
                                         }}
                                     ></div>
-                                    <div className="relative z-10 text-indigo-600 pb-3">
-                                        {item.icon}
+                                    <div className="relative z-10 flex items-center gap-3">
+                                        <div className="text-indigo-600 bg-indigo-100 p-2 rounded-full">
+                                            {item.icon}
+                                        </div>
+                                        <h4 className="text-lg text-gray-800 font-semibold">
+                                            {item.title}
+                                        </h4>
                                     </div>
-                                    <h4 className="relative z-10 text-lg text-gray-800 font-semibold">
-                                        {item.title}
-                                    </h4>
-                                    <p className="relative z-10">
+                                    <p className="relative z-10 mt-3">
                                         {item.desc}
                                     </p>
                                 </li>

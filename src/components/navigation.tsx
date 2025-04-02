@@ -1,13 +1,27 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Navigation() {
+    const [isScrolled, setIsScrolled] = useState(false);
     const navigation = [
         { title: "Home", path: "#home" },
         { title: "Medication Guide", path: "#learn" },
         { title: "Adherence Tools", path: "#tools" },
         { title: "Support", path: "#support" },
     ];
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
         e.preventDefault();
@@ -18,7 +32,9 @@ export default function Navigation() {
     };
 
     return (
-        <header className="sticky top-0 z-50 bg-indigo-200 shadow-md">
+        <header className={`sticky top-0 z-50 bg-indigo-200/80 backdrop-blur-md transition-all duration-300 ${
+            isScrolled ? 'shadow-lg' : ''
+        }`}>
             <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
                 <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="flex items-center">
                     <img src="/images/logo.png" className="h-10 w-40" alt="EpiCare Logo" />

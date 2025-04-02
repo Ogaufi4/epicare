@@ -42,7 +42,7 @@ export default function Hero() {
 
     return (
         <div className="bg-indigo-200">
-            <section className="pt-24 mt-0 mx-auto max-w-screen-xl pb-12 px-4 items-center lg:flex md:px-8 bg-indigo-200 animate-fade-in-up">
+            <section className="pt-48 pb-12 mx-auto max-w-screen-xl  px-4 items-center lg:flex md:px-8 bg-indigo-200 animate-fade-in-up">
                 <div className="space-y-4 flex-1 sm:text-center lg:text-left">
                     <h1
                         ref={headerRef}
