@@ -52,7 +52,11 @@ export default function Hero() {
                         <span className="text-black-100"> Epilepsy Medication</span>
                     </h1>
                     <p className="text-black max-w-xl leading-relaxed sm:mx-auto lg:ml-0 falling-words">
+                    <span className="text-indigo-500 font-bold text-xl"> Epilepsy</span> is a neurological disorder characterized by recurrent seizures. These seizures are caused by sudden, excessive electrical discharges in the brain. Proper medication management is essential for controlling seizures and improving quality of life.
+                    </p>
+                    <p className="text-black max-w-xl leading-relaxed sm:mx-auto lg:ml-0 falling-words">
                         Taking your epilepsy medication as prescribed is crucial for seizure control. Learn about medication adherence strategies, tools, and support to help you stay on track with your treatment plan.
+
                     </p>
                     <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
                         <a href="#learn" className="px-7 py-3 w-full bg-white text-gray-800 text-center rounded-md shadow-md block sm:w-auto hover:bg-gray-100 transition-colors falling-words">
@@ -93,3 +97,4 @@ export default function Hero() {
         </div>
     );
 }
+
