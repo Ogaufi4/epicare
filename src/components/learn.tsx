@@ -45,8 +45,8 @@ export default function Learn() {
             color="#8400ff"
             strokeWidth={1.5}
           />,
-            title: "What is epilepsy?",
-            desc: "Epilepsy is a neurological disorder characterized by recurrent seizures caused by abnormal electrical activity in the brain. It is diagnosed after two or more unprovoked seizures occurring at least 24 hours apart."
+            title: "Why Medication Adherence Matters",
+            desc: "Consistent medication adherence is crucial for controlling seizures and preventing complications. Missing doses can lead to breakthrough seizures and increase the risk of status epilepticus."
         },
         {
             icon:
@@ -56,8 +56,8 @@ export default function Learn() {
             color="#8400ff"
             strokeWidth={1.5}
           />,
-            title: "Types of focal seizures",
-            desc: "Focal seizures can be without loss of consciousness, causing altered emotions or involuntary jerking, or with impaired awareness, involving a change or loss of consciousness and repetitive movements."
+            title: "Setting Up Reminders",
+            desc: "Use phone alarms, medication apps, or pill organizers to create a consistent routine. Setting reminders at specific times helps maintain regular medication schedules."
         },
         {
             icon:
@@ -67,8 +67,8 @@ export default function Learn() {
             color="#8400ff"
             strokeWidth={1.5}
           />,
-            title: "Types of generalized seizures",
-            desc: "Generalized seizures include absence seizures, tonic seizures, atonic seizures, clonic seizures, myoclonic seizures, and tonic-clonic seizures, each with distinct symptoms and effects."
+            title: "Understanding Your Medication",
+            desc: "Learn about your specific medications, their side effects, and how they work. This knowledge helps you understand why adherence is important and what to expect."
         },
         {
             icon:
@@ -78,8 +78,8 @@ export default function Learn() {
             color="#8400ff"
             strokeWidth={1.5}
           />,
-            title: "Medication adherence",
-            desc: "Taking epilepsy medications as prescribed is essential for seizure control, reducing risks like SUDEP, and improving quality of life. Non-adherence can lead to breakthrough seizures and complications."
+            title: "Creating a Medication Routine",
+            desc: "Link medication times to daily activities like meals or bedtime. This helps establish a consistent routine and makes it easier to remember your doses."
         },
         {
             icon:
@@ -89,8 +89,8 @@ export default function Learn() {
             color="#8400ff"
             strokeWidth={1.5}
           />,
-            title: "Improving adherence",
-            desc: "Simple strategies like setting reminders, using pill organizers, and educating patients and families about epilepsy can help improve medication adherence and treatment outcomes."
+            title: "Managing Side Effects",
+            desc: "Learn how to recognize and manage medication side effects. Always report any concerns to your healthcare provider rather than stopping medication on your own."
         },
         {
             icon:
@@ -100,8 +100,8 @@ export default function Learn() {
             color="#8400ff"
             strokeWidth={1.5}
           />,
-            title: "Impact of non-adherence",
-            desc: "Non-adherence to antiepileptic drugs can result in poor seizure control, increased healthcare costs, and a negative impact on quality of life. Education and support are crucial for adherence."
+            title: "Travel and Emergency Planning",
+            desc: "Keep extra medication with you, maintain a list of your prescriptions, and have an emergency plan in place when traveling or during unexpected situations."
         },
     ]
 
@@ -116,10 +116,10 @@ export default function Learn() {
                 >
                     <div className="relative z-10">
                         <h3 className="text-gray-800 text-3xl font-extrabold sm:text-4xl">
-                            Learn more about Epilepsy
+                            Medication Adherence Strategies
                         </h3>
                         <p className="mt-3">
-                            Epilepsy is a complex neurological disorder that affects millions of people worldwide. Understanding its types, symptoms, and the importance of medication adherence can significantly improve the quality of life for those living with epilepsy.
+                            Taking your epilepsy medication as prescribed is essential for seizure control and overall health. Discover practical strategies and tools to help you maintain consistent medication adherence and improve your quality of life.
                         </p>
                     </div>
                     <div className="absolute inset-0 max-w-xs mx-auto h-44 blur-[111px]" style={{ background: "linear-gradient(152.92deg, rgba(192, 132, 252, 0.3) 4.54%, rgba(232, 121, 249, 0.31) 34.2%, rgba(192, 132, 252, 0.16) 77.55%)" }}></div>

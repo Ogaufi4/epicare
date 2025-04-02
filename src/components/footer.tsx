@@ -7,44 +7,72 @@ export default function Footer() {
             label: "Resources",
             items: [
                 {
-                    href: 'email.com',
-                    name: 'contact'
+                    href: '/medication-guide',
+                    name: 'Medication Guide'
                 },
-            
+                {
+                    href: '/adherence-tips',
+                    name: 'Adherence Tips'
+                },
+                {
+                    href: '/support-groups',
+                    name: 'Support Groups'
+                },
+                {
+                    href: '/contact',
+                    name: 'Contact Us'
+                }
             ],
         },
         {
             label: "About",
             items: [
                 {
-                    href: 'javascript:void()',
-                    name: 'Terms'
+                    href: '/about-epilepsy',
+                    name: 'About Epilepsy'
                 },
                 {
-                    href: 'javascript:void()',
-                    name: 'License'
+                    href: '/medication-types',
+                    name: 'Types of Medications'
                 },
-             
+                {
+                    href: '/side-effects',
+                    name: 'Managing Side Effects'
+                }
             ]
         },
         {
-            label: "Explore",
+            label: "Tools",
             items: [
                 {
-                    href: 'javascript:void()',
-                    name: 'Showcase'
+                    href: '/medication-tracker',
+                    name: 'Medication Tracker'
                 },
-               
+                {
+                    href: '/reminder-tools',
+                    name: 'Reminder Tools'
+                },
+                {
+                    href: '/emergency-plan',
+                    name: 'Emergency Plan'
+                }
             ]
         },
         {
-            label: "Company",
+            label: "Support",
             items: [
                 {
-                    href: 'javascript:void()',
-                    name: 'Partners'
+                    href: '/faq',
+                    name: 'FAQ'
                 },
-                
+                {
+                    href: '/community',
+                    name: 'Community'
+                },
+                {
+                    href: '/professional-help',
+                    name: 'Professional Help'
+                }
             ],
         }
     ]
