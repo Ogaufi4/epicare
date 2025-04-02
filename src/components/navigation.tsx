@@ -1,8 +1,9 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const titleRef = useRef<HTMLHeadingElement>(null);
     const navigation = [
         { title: "Home", path: "#home" },
         { title: "Medication Guide", path: "#learn" },
@@ -14,8 +15,14 @@ export default function Navigation() {
         const handleScroll = () => {
             if (window.scrollY > 0) {
                 setIsScrolled(true);
+                if (titleRef.current) {
+                    titleRef.current.classList.add('fade-in');
+                }
             } else {
                 setIsScrolled(false);
+                if (titleRef.current) {
+                    titleRef.current.classList.remove('fade-in');
+                }
             }
         };
 
@@ -38,6 +45,7 @@ export default function Navigation() {
             <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
                 <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="flex items-center">
                     <img src="/images/logo.png" className="h-10 w-40" alt="EpiCare Logo" />
+                   
                 </a>
                 <ul className="py-4 flex-1 items-center flex space-x-3 sm:space-x-6 sm:justify-end">
                     {navigation.map((item, idx) => (
@@ -61,6 +69,11 @@ export default function Navigation() {
                     </li>
                 </ul>
             </nav>
+            <style jsx>{`
+                .fade-in {
+                    opacity: 1 !important;
+                }
+            `}</style>
         </header>
     );
 } 

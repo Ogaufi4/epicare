@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Bell, Calendar, Clock, FileText, Pill, Plus, Settings, Trash2 } from 'lucide-react';
 
 export default function AdherenceTools() {
@@ -13,6 +13,28 @@ export default function AdherenceTools() {
         time: '',
         dose: ''
     });
+
+    const headerRef = useRef<HTMLDivElement>(null);
+    const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsHeaderVisible(entry.isIntersecting);
+            },
+            { threshold: 0.5 }
+        );
+
+        if (headerRef.current) {
+            observer.observe(headerRef.current);
+        }
+
+        return () => {
+            if (headerRef.current) {
+                observer.unobserve(headerRef.current);
+            }
+        };
+    }, []);
 
     const handleAddMedication = () => {
         if (newMedication.name && newMedication.time && newMedication.dose) {
@@ -28,7 +50,12 @@ export default function AdherenceTools() {
     return (
         <section className="py-14 bg-gray-50">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
-                <div className="max-w-2xl mx-auto text-center">
+                <div 
+                    ref={headerRef}
+                    className={`max-w-2xl mx-auto text-center transition-opacity duration-1000 ${
+                        isHeaderVisible ? 'opacity-100' : 'opacity-0'
+                    }`}
+                >
                     <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl">
                         Medication Management Tools
                     </h1>
@@ -39,7 +66,9 @@ export default function AdherenceTools() {
 
                 <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                     {/* Medication Tracker */}
-                    <div className="bg-white p-6 rounded-xl shadow-lg">
+                    <div className={`bg-white p-6 rounded-xl shadow-lg transition-opacity duration-1000 ${
+                        isHeaderVisible ? 'opacity-100' : 'opacity-0'
+                    }`}>
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100">
                                 <Pill className="w-6 h-6 text-indigo-600" />
@@ -99,7 +128,9 @@ export default function AdherenceTools() {
                     </div>
 
                     {/* Reminder Settings */}
-                    <div className="bg-white p-6 rounded-xl shadow-lg">
+                    <div className={`bg-white p-6 rounded-xl shadow-lg transition-opacity duration-1000 ${
+                        isHeaderVisible ? 'opacity-100' : 'opacity-0'
+                    }`}>
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100">
                                 <Bell className="w-6 h-6 text-indigo-600" />
@@ -132,7 +163,9 @@ export default function AdherenceTools() {
                     </div>
 
                     {/* Emergency Plan */}
-                    <div className="bg-white p-6 rounded-xl shadow-lg">
+                    <div className={`bg-white p-6 rounded-xl shadow-lg transition-opacity duration-1000 ${
+                        isHeaderVisible ? 'opacity-100' : 'opacity-0'
+                    }`}>
                         <div className="flex items-center gap-4">
                             <div className="w-12 h-12 flex items-center justify-center rounded-full bg-indigo-100">
                                 <FileText className="w-6 h-6 text-indigo-600" />
