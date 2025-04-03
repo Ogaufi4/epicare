@@ -42,8 +42,18 @@ export default function Hero() {
 
     return (
         <div className="bg-indigo-200">
-            <section className="pt-48 md:pt-24 pb-12 mx-auto max-w-screen-xl  px-4 items-center lg:flex md:px-8 bg-indigo-200 animate-fade-in-up">
-                <div className="space-y-4 flex-1 sm:text-center lg:text-left">
+            <section className="pt-24 pb-12 mx-auto max-w-screen-xl px-4 flex flex-col lg:flex-row items-center md:px-8 bg-indigo-200 animate-fade-in-up">
+                <div
+                    ref={imageRef}
+                    className="flex-1 text-center mb-8 lg:mb-0 lg:ml-3 lg:order-2 w-full max-w-lg mx-auto"
+                >
+                    <img 
+                        src="https://images.pexels.com/photos/6798899/pexels-photo-6798899.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                        className="w-full rounded-lg shadow-xl" 
+                        alt="Medication Management" 
+                    />
+                </div>
+                <div className="space-y-4 flex-1 text-center lg:text-left lg:order-1">
                     <h1
                         ref={headerRef}
                         className="text-black font-bold text-4xl xl:text-5xl opacity-0 transition-opacity duration-1000"
@@ -51,27 +61,20 @@ export default function Hero() {
                         Managing Your 
                         <span className="text-black-100"> Epilepsy Medication</span>
                     </h1>
-                    <p className="text-black max-w-xl leading-relaxed sm:mx-auto lg:ml-0 falling-words">
-                    <span className="text-indigo-500 font-bold text-xl"> Epilepsy</span> is a neurological disorder characterized by recurrent seizures. These seizures are caused by sudden, excessive electrical discharges in the brain. Proper medication management is essential for controlling seizures and improving quality of life.
+                    <p className="text-black max-w-xl leading-relaxed mx-auto lg:mx-0 falling-words">
+                        <span className="text-indigo-500 font-bold text-xl">Epilepsy</span> is a neurological disorder characterized by recurrent seizures. These seizures are caused by sudden, excessive electrical discharges in the brain. Proper medication management is essential for controlling seizures and improving quality of life.
                     </p>
-                    <p className="text-black max-w-xl leading-relaxed sm:mx-auto lg:ml-0 falling-words">
+                    <p className="text-black max-w-xl leading-relaxed mx-auto lg:mx-0 falling-words">
                         Taking your epilepsy medication as prescribed is crucial for seizure control. Learn about medication adherence strategies, tools, and support to help you stay on track with your treatment plan.
-
                     </p>
-                    <div className="pt-10 items-center justify-center space-y-3 sm:space-x-6 sm:space-y-0 sm:flex lg:justify-start">
-                        <a href="#learn" className="px-7 py-3 w-full bg-white text-gray-800 text-center rounded-md shadow-md block sm:w-auto hover:bg-gray-100 transition-colors falling-words">
+                    <div className="pt-10 flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-6">
+                        <a href="#learn" className="px-7 py-3 w-full sm:w-auto bg-white text-gray-800 text-center rounded-md shadow-md hover:bg-gray-100 transition-colors falling-words">
                             Medication Guide
                         </a>
-                        <a href="#tools" className="px-7 py-3 w-full bg-gray-700 text-gray-200 text-center rounded-md block sm:w-auto hover:bg-gray-600 transition-colors falling-words">
+                        <a href="#tools" className="px-7 py-3 w-full sm:w-auto bg-gray-700 text-gray-200 text-center rounded-md hover:bg-gray-600 transition-colors falling-words">
                             Adherence Tools
                         </a>
                     </div>
-                </div>
-                <div
-                    ref={imageRef}
-                    className="flex-1 text-center mt-7 lg:mt-0 lg:ml-3 rounded-lg"
-                >
-                    <img src="https://images.pexels.com/photos/6798899/pexels-photo-6798899.jpeg?auto=compress&cs=tinysrgb&w=600" className="w-full mx-auto sm:w-10/12 lg:w-full rounded-lg" alt="Medication Management" />
                 </div>
             </section>
             <style jsx>{`
