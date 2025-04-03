@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import Faqs from "@/components/faqs";
-import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import Learn from "@/components/learn";
 import Medical from "@/components/medicalVirtual";
 import Team from "@/components/team";
 import AdherenceTools from "@/components/adherenceTools";
+import MedicationGallery from "@/components/MedicationGallery";
 
 import React from "react";
+import AdherenceChart from "@/components/AdherenceChart";
 
 export default function Home() {
   return (
@@ -20,18 +21,16 @@ export default function Home() {
       </section>
       <section id="tools">
         <AdherenceTools />
+        <MedicationGallery />
       </section>
       <section id="medical">
-        <Medical />
+        <AdherenceChart />
       </section>
       <section id="faqs">
         <Faqs />
       </section>
       <section id="team">
         <Team />
-      </section>
-      <section id="support">
-        <Footer />
       </section>
     </div>
   );
