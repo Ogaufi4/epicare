@@ -81,10 +81,9 @@ export default function ReadModeButton() {
           handleReadMode();
         }
       }}
-      className="fixed px-4 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition-colors z-50"
+      className="fixed bottom-4 left-4 md:right-4 md:left-auto px-4 py-2 bg-indigo-600 text-white rounded shadow hover:bg-indigo-700 transition-colors z-50"
       style={{
-        bottom: 'calc(1rem + env(safe-area-inset-bottom))',
-        right: 'calc(1rem + env(safe-area-inset-right))'
+        bottom: 'calc(1rem + env(safe-area-inset-bottom))'
       }}
     >
       {isReading ? "Stop Reading" : "Activate Read Mode"}
