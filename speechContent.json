@@ -1,0 +1,77 @@
+{
+  "hero": [
+    { "order": 1, "text": "Managing Your Epilepsy Medication" },
+    { "order": 2, "text": "Epilepsy is a neurological disorder characterized by recurrent seizures. These seizures are caused by sudden, excessive electrical discharges in the brain. Proper medication management is essential for controlling seizures and improving quality of life." },
+    { "order": 3, "text": "Taking your epilepsy medication as prescribed is crucial for seizure control. Learn about medication adherence strategies, tools, and support to help you stay on track with your treatment plan." },
+    { "order": 4, "text": "Medication Guide" },
+    { "order": 5, "text": "Adherence Tools" },
+    { "order": 6, "text": "Medication Management" }
+  ],
+  "learn": [
+    { "order": 1, "title": "Why Medication Adherence Matters", "desc": "Consistent medication adherence is crucial for controlling seizures and preventing complications. Missing doses can lead to breakthrough seizures and increase the risk of status epilepticus." },
+    { "order": 2, "title": "Setting Up Reminders", "desc": "Use phone alarms, medication apps, or pill organizers to create a consistent routine. Setting reminders at specific times helps maintain regular medication schedules." },
+    { "order": 3, "title": "Understanding Your Medication", "desc": "Learn about your specific medications, their side effects, and how they work. This knowledge helps you understand why adherence is important and what to expect." },
+    { "order": 4, "title": "Creating a Medication Routine", "desc": "Link medication times to daily activities like meals or bedtime. This helps establish a consistent routine and makes it easier to remember your doses." },
+    { "order": 5, "title": "Managing Side Effects", "desc": "Learn how to recognize and manage medication side effects. Always report any concerns to your healthcare provider rather than stopping medication on your own." },
+    { "order": 6, "title": "Travel and Emergency Planning", "desc": "Keep extra medication with you, maintain a list of your prescriptions, and have an emergency plan in place when traveling or during unexpected situations." }
+  ],
+  "adherenceTools": [
+    {
+      "order": 1,
+      "title": "Medication Management Tools",
+      "desc": "Use these tools to help you stay on track with your medication schedule and maintain better control of your epilepsy."
+    },
+    {
+      "order": 2,
+      "title": "Emergency Contacts",
+      "desc": "Add your emergency contacts and important medical information here."
+    },
+    {
+      "order": 3,
+      "title": "Seizure Action Plan",
+      "desc": "Document your seizure triggers, warning signs, and what others should do during a seizure."
+    }
+  ],
+  "medicationGallery": [
+    { "order": 1, "text": "Medication Management in Practice" },
+    { "order": 2, "text": "Visual guide to proper medication management and adherence techniques" },
+    { "order": 3, "title": "Weekly Medication Planning", "desc": "Organizing medications in a pill organizer for better adherence" },
+    { "order": 4, "title": "Daily Medication Management", "desc": "Taking prescribed medications on schedule" },
+    { "order": 5, "title": "Medication Organization", "desc": "Keeping track of different medications and dosages" },
+    { "order": 6, "title": "Healthcare Support", "desc": "Professional guidance for medication management" },
+    { "order": 7, "text": "Images showcase various aspects of medication management and adherence practices. Always follow your healthcare provider's specific instructions." }
+  ],
+  "adherenceChart": [
+    { "order": 1, "title": "Medication Adherence Rates", "desc": "Comparative analysis of adherence rates across different studies" },
+    { "order": 2, "text": "CHAMANET ET AL: 63% Adherent, 37% Non-adherent" },
+    { "order": 3, "text": "FERRARI ET AL: 66% Adherent, 34% Non-adherent" },
+    { "order": 4, "text": "GUO ET AL: 60% Adherent, 40% Non-adherent" },
+    { "order": 5, "text": "HOVINGA ET AL: 71% Adherent, 29% Non-adherent" },
+    { "order": 6, "text": "JONES ET AL: 41% Adherent, 59% Non-adherent" },
+    { "order": 7, "text": "SHALLCROSS ET AL: 64% Adherent, 36% Non-adherent" },
+    { "order": 8, "text": "SMITHSON ET AL: 70% Adherent, 30% Non-adherent" },
+    { "order": 9, "title": "Key Findings" },
+    { "order": 10, "text": "Highest adherence rate: [highest]% ([study])" },
+    { "order": 11, "text": "Lowest adherence rate: [lowest]% ([study])" },
+    { "order": 12, "text": "Average adherence rate: [average]%" }
+  ],
+  "faqs": [
+    { "order": 1, "text": "How can we help?" },
+    { "order": 2, "text": "Everything you need to know about the Epilipsy. Can’t find the answer you’re looking for? Contact us." },
+    { "order": 3, "q": "What is epilepsy?", "a": "Epilepsy is a group of non-communicable neurological disorders characterized by recurrent epileptic seizures. An epileptic seizure is the clinical manifestation of an abnormal, excessive, and synchronized electrical discharge in the neurons. The occurrence of two or more unprovoked seizures defines epilepsy." },
+    { "order": 4, "q": "What are focal seizures?", "a": "Focal seizures are divided into two categories: Focal seizures without loss of consciousness, which don't cause a loss of awareness and may alter emotions or cause involuntary jerking of a body part; and focal seizures with impaired awareness, which involve a change or loss of consciousness and may include repetitive movements like hand rubbing or chewing." },
+    { "order": 5, "q": "What are generalized seizures?", "a": "Generalized seizures involve all areas of the brain and include several types: Absence seizures (brief loss of awareness, often with subtle movements), Tonic seizures (stiff muscles, often causing falls), Atonic seizures (sudden loss of muscle control), Clonic seizures (rhythmic jerking movements), Myoclonic seizures (sudden brief jerks or twitches), and Tonic-clonic seizures (sudden loss of consciousness with body stiffening and shaking)." },
+    { "order": 6, "q": "Why is medication adherence important for epilepsy?", "a": "Adhering to epilepsy medication regimens is crucial for effective seizure control, reducing the risk of seizures and their associated risks, and improving overall quality of life. It helps prevent complications like SUDEP, reduces healthcare costs, and ensures better seizure management." },
+    { "order": 7, "q": "How can medication adherence be improved?", "a": "Strategies include setting reminders, using pill organizers, and maintaining open communication with healthcare providers. Education about epilepsy and the importance of adherence is also key to successful treatment." }
+  ],
+  "referenceMaterial": [
+    { "order": 1, "text": "Reference Material" },
+    { "order": 2, "text": "Explore a variety of resources and strategies to help you better understand and manage epilepsy. Stay informed and empowered with the latest information tailored to your needs." },
+    { "order": 3, "text": "World Health Organization. (2022). Epilepsy fact sheet. Retrieved from https://www.who.int/news-room/fact-sheets/detail/epilepsy" },
+    { "order": 4, "text": "Fisher, R. S., Acevedo, C., Arzimanoglou, A., et al. (2014). ILAE official report: A practical clinical definition of epilepsy. Epilepsia, 55(4), 475-482. https://doi.org/10.1111/epi.12550" },
+    { "order": 5, "text": "National Institute of Neurological Disorders and Stroke. (2021). Epilepsy information page. Retrieved from https://www.ninds.nih.gov/Disorders/All-Disorders/Epilepsy-Information-Page" },
+    { "order": 6, "text": "Epilepsy Foundation. (2023). Managing epilepsy. Retrieved from https://www.epilepsy.com/living-epilepsy/managing-your-epilepsy" },
+    { "order": 7, "text": "Beghi, E. (2020). The epidemiology of epilepsy. Neuroepidemiology, 54(2), 185-191. https://doi.org/10.1159/000503831" },
+    { "order": 8, "text": "Centers for Disease Control and Prevention. (2022). Epilepsy data and statistics. Retrieved from https://www.cdc.gov/epilepsy/data/index.html" }
+  ]
+}

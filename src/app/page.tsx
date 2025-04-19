@@ -6,9 +6,11 @@ import Medical from "@/components/medicalVirtual";
 import Team from "@/components/team";
 import AdherenceTools from "@/components/adherenceTools";
 import MedicationGallery from "@/components/MedicationGallery";
+import ReadModeButton from "@/components/ReadModeButton";
 
 import React from "react";
 import AdherenceChart from "@/components/AdherenceChart";
+import ReferenceMaterial from "@/components/referenceMaterial";
 
 export default function Home() {
   return (
@@ -29,9 +31,14 @@ export default function Home() {
       <section id="faqs">
         <Faqs />
       </section>
+      
       <section id="team">
         <Team />
       </section>
+      <section id="refernce">
+        <ReferenceMaterial />
+      </section>
+      <ReadModeButton />
     </div>
   );
 }
